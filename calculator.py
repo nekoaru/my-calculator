@@ -13,3 +13,13 @@ def subtract(x, y):
     result = x - y
     print(f"The difference between {x} and {y} is {result}")
     return result
+
+# 计算2个数字的商的函数
+def divide(x, y):
+    if not isinstance(x, (int, float)) or not isinstance(y, (int, float)):
+        raise ValueError("Both inputs must be numbers")
+    if y == 0:
+        raise ValueError("Division by zero is not allowed")
+    result = x / y
+    print(f"The quotient of {x} and {y} is {result}")
+    return result
